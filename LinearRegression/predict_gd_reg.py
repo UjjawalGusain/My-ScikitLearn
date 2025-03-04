@@ -17,7 +17,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random
 
 print("\n==== SGD REGRESSOR COMPARISON ====\n")
 
-myLr = MySGDRegressor(step=0.01, epochs=100)
+myLr = MySGDRegressor(step=0.01, epochs=1000, random_state=69, batch_size=20)
 myLr.fit(X_train, y_train)
 
 sklearnLr = SklearnSGDRegressor(learning_rate='constant', max_iter=1000, alpha=0, shuffle=False)
