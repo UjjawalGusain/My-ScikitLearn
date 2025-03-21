@@ -1,6 +1,5 @@
 import pandas as pd
 from sklearn.datasets import load_diabetes
-from sklearn.linear_model import SGDRegressor as SklearnSGDRegressor
 from sklearn.linear_model import LinearRegression as SklearnLinearRegression
 from linear_regression import LinearRegression as MyLinearRegression
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
